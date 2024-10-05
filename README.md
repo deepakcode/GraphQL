@@ -36,6 +36,8 @@ https://github.com/Netflix/dgs-examples-java
 <details>
   <summary>01. GraphQL+Srping</summary></summary>
 
+https://github.com/LEMUBIT/LaptopGraphQLServer
+
 Library/Dependency
 ```
 dependencies {
@@ -109,6 +111,8 @@ public class GraphQLProvider {
 
 <details>
   <summary>02. GraphQL+Srping+ GraphiQL</summary></summary>
+
+https://github.com/spring-guides/gs-graphql-server
 
 Library/Dependency
 ```
