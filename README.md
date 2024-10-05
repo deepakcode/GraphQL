@@ -34,12 +34,17 @@ https://github.com/Netflix/dgs-examples-java
 `$ brew install --cask graphql-playground`
 
 <details>
-  <summary>GraphQL+Srping</summary></summary>
+  <summary>01. GraphQL+Srping</summary></summary>
 
 Library/Dependency
 ```
+dependencies {
 	implementation 'com.graphql-java:graphql-java:11.0'
 	implementation 'com.graphql-java:graphql-java-spring-boot-starter-webmvc:1.0'
+	implementation 'com.google.guava:guava:26.0-jre'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
 ```
 
 ```java
@@ -97,6 +102,51 @@ public class GraphQLProvider {
 
     }
 
+}
+```
+</details>
+
+
+<details>
+  <summary>01. GraphQL+Srping</summary></summary>
+
+Library/Dependency
+```
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    //Graph QL
+    implementation 'org.springframework.boot:spring-boot-starter-graphql'
+    testImplementation 'org.springframework.graphql:spring-graphql-test'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework:spring-webflux'
+
+}
+```
+
+```java
+package com.example.graphqlserver.graphql;
+
+import com.example.graphqlserver.domain.Author;
+import com.example.graphqlserver.domain.Book;
+import org.springframework.graphql.data.method.annotation.Argument;
+import org.springframework.graphql.data.method.annotation.QueryMapping;
+import org.springframework.graphql.data.method.annotation.SchemaMapping;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class BookController {
+    @QueryMapping
+    public Book bookById(@Argument String id) {
+        return Book.getById(id);
+    }
+
+    @SchemaMapping
+    public Author author(Book book) {
+        return Author.getById(book.authorId());
+    }
 }
 ```
 </details>
