@@ -1,4 +1,4 @@
-#### old (X)
+#### Old way (X)
 https://github.com/LEMUBIT/LaptopGraphQLServer
 
 ### apollographql 
@@ -19,3 +19,7 @@ https://github.com/graphql/graphiql/tree/main/packages/graphiql#readme
 https://github.com/apollographql/spotify-showcase
 https://www.youtube.com/watch?v=h9IsV0AlFqE
 
+
+### Example DGS+Apollo: 
+
+https://netflix.github.io/dgs/examples/
