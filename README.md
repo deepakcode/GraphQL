@@ -21,5 +21,7 @@ https://www.youtube.com/watch?v=h9IsV0AlFqE
 
 
 ### Example DGS+Apollo: 
-
 https://netflix.github.io/dgs/examples/
+
+### DGS Example
+https://github.com/Netflix/dgs-examples-java
