@@ -108,7 +108,7 @@ public class GraphQLProvider {
 
 
 <details>
-  <summary>01. GraphQL+Srping</summary></summary>
+  <summary>02. GraphQL+Srping+ GraphiQL</summary></summary>
 
 Library/Dependency
 ```
