@@ -27,11 +27,9 @@ https://netflix.github.io/dgs/examples/
 https://github.com/Netflix/dgs-examples-java
 
 
-## Practice Example
+# Practice Example
 
-# graphql-playground
-
-https://github.com/graphql/graphql-playground
+[graphql-playground](https://github.com/graphql/graphql-playground)
 
 `$ brew install --cask graphql-playground`
 
